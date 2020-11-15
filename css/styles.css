@@ -1,0 +1,190 @@
+/*==================================
+
+
+  Universal Styling
+
+
+======================================*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #45494e;
+  font-family: "Varela Round", sans-serif;
+  text-transform: capitalize;
+}
+
+.container {
+    background: white;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+h1,
+h2 {
+    padding: 16px 0;
+}
+
+
+/*==================================
+
+
+  Menu Styling
+
+
+======================================*/
+.menu {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.menu ul {
+  list-style: none;
+}
+
+.menu > ul > li {
+    display: inline-block;
+    background: #3c3c3c;
+    width: 19%;
+    margin-bottom: 1px;
+    position: relative;
+    vertical-align: top;
+}
+
+.menu ul li a {
+    color: #fbfbfb;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.menu ul li a:hover {
+    background: white;
+    color: #3c3c3c;
+    transition: .3s;
+}
+
+.menu > ul > li:nth-child(1) {
+    border-top: 5px solid #fda085;
+}
+
+.menu > ul > li:nth-child(2) {
+    border-top: 5px solid #bff098;
+}
+
+.menu > ul > li:nth-child(3) {
+    border-top: 5px solid #ea8d8d;
+}
+
+.menu > ul > li:nth-child(4) {
+    border-top: 5px solid #d8b5ff;
+}
+
+.menu > ul > li:nth-child(5) {
+    border-top: 5px solid #c6ea8d;
+}
+
+.sub-menu {
+    display: none;
+}
+
+.menu-item:hover .sub-menu {
+    display: block;
+    position: absolute;
+    top: 50px;
+    background: #3c3c3c;
+    width: 100%;
+}
+
+.menu svg {
+    position: relative;
+    top: 2px;
+}
+
+/*==================================
+
+
+  FAQ Styling
+
+
+======================================*/
+details {
+  border: 1px solid black;
+  background: #f2f2f2;
+  padding: 15px 20px;
+}
+
+summary {
+  font-size: 19px;
+  font-weight: bold;
+  transition: .3s;
+}
+
+summary:hover {
+  cursor: pointer;
+  color: #d8b5ff;
+  transition: .3s;
+}
+
+details p {
+  padding: 15px 25px 10px;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary:before {
+  content: "\f0fe";
+  font-family: 'Font Awesome 5 Free';
+  margin-right: 10px;
+  font-weight: normal;
+  color: #fda085;
+  transition: .3s;
+}
+
+summary:hover:before {
+  color: #bff098;
+  transition: .3s;
+}
+
+details[open] summary:before {
+  content: "\f146";
+}
+/*==================================
+
+
+  Footer Styling
+
+
+======================================*/
+
+footer {
+    text-align: center;
+    background: black;
+    color: white;
+    padding: 40px 0;
+}
+
+footer a {
+    color: white;
+    font-size: 25px;
+    margin: 0 5px;
+    transition: .3s;
+}
+
+footer a:hover {
+    color: #c5c2c2;
+    transition: .3s;
+}
+
+.website {
+    margin-bottom: 15px;
+}
